@@ -1,0 +1,41 @@
+{
+  "name": "react-native-top-tab-view",
+  "version": "1.0.0",
+  "description": "Tabbed navigation that you can swipe between, each tab can have its own ScrollView and maintain its own scroll position between swipes.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint -c .eslintrc . --ignore-path .gitignore",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawaniharsh/react-native-top-tab-view.git"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@react-native-community/viewpager": "^2.0.1",
+    "create-react-class": "^15.6.2",
+    "prop-types": "^15.6.0",
+    "react-timer-mixin": "^0.13.3"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.1.1"
+  },
+  "keywords": [
+    "react-native-top-tab-view",
+    "react-native-component",
+    "react-component",
+    "react-native"
+  ],
+  "author": "harsh",
+  "license": "ISC",
+  "peerDependencies": {
+    "react-native": ">=0.20.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rawaniharsh/react-native-top-tab-view/issues"
+  },
+  "homepage": "https://github.com/rawaniharsh/react-native-top-tab-view#readme"
+}

@@ -1,29 +1,20 @@
 
-## react-native-scrollable-tab-view
-[![npm version](https://badge.fury.io/js/react-native-scrollable-tab-view.svg)](https://badge.fury.io/js/react-native-scrollable-tab-view)
+## react-native-top-tab-view
+[![npm version](https://badge.fury.io/js/react-native-top-tab-view.svg)](https://badge.fury.io/js/react-native-top-tab-view)
 
-This is probably my favorite navigation pattern on Android, I wish it
-were more common on iOS! This is a very simple JavaScript-only
-implementation of it for React Native. For more information about how
-the animations behind this work, check out the Rebound section of the
-[React Native Animation Guide](https://facebook.github.io/react-native/docs/animations.html)
+It's a react native top tab navigator for both Android and IOS with the scrollview in each tab and sliding between the tabs. For more information about how the animations behind this work, check out the Rebound section of the
+[React Native Animation Guide](https://reactnative.dev/docs/animations)
 
 
 ## Add it to your project
 
-1. Run `npm install react-native-scrollable-tab-view --save`
-2. `var ScrollableTabView = require('react-native-scrollable-tab-view');`
-
-## Demo
-<a href="https://appetize.io/embed/6qfv7eydjtm34mhn6qwj2nt3xm?embed=true&screenOnly=false&xdocMsg=true&debug=true&scale=100&deviceColor=black&orientation=portrait&device=iphone6s&osVersion=9.3&deviceId=RGV2aWNlOjU2Y2FjNTExZWQwOTM2MTEwMGRhYTNlNg&platform=ios&width=375&height=668&phoneWidth=416&phoneHeight=870&screenOffsetLeft=21&screenOffsetTop=100&params=%7B%7D" target="_blank"><strong>Run this example</strong></a>
-
-<a href="https://raw.githubusercontent.com/brentvatne/react-native-scrollable-tab-view/master/demo_images/demo.gif"><img src="https://raw.githubusercontent.com/brentvatne/react-native-scrollable-tab-view/master/demo_images/demo.gif" width="350"></a>
-<a href="https://raw.githubusercontent.com/brentvatne/react-native-scrollable-tab-view/master/demo_images/demo-fb.gif"><img src="https://raw.githubusercontent.com/brentvatne/react-native-scrollable-tab-view/master/demo_images/demo-fb.gif" width="350"></a>
+1. Run `npm install react-native-top-tab-view --save`
+2. `var ScrollableTabView = require('react-native-top-tab-view');`
 
 ## Basic usage
 
 ```javascript
-var ScrollableTabView = require('react-native-scrollable-tab-view');
+var ScrollableTabView = require('react-native-top-tab-view');
 
 var App = React.createClass({
   render() {
@@ -44,7 +35,7 @@ Suppose we had a custom tab bar called `CustomTabBar`, we would inject
 it into our `ScrollableTabView` like this:
 
 ```javascript
-var ScrollableTabView = require('react-native-scrollable-tab-view');
+var ScrollableTabView = require('react-native-top-tab-view');
 var CustomTabBar = require('./CustomTabBar');
 
 var App = React.createClass({
@@ -59,18 +50,6 @@ var App = React.createClass({
   }
 });
 ```
-To start you can just copy [DefaultTabBar](https://github.com/skv-headless/react-native-scrollable-tab-view/blob/master/DefaultTabBar.js).
-
-## Examples
-
-[SimpleExample](https://github.com/skv-headless/react-native-scrollable-tab-view/blob/master/Example/SimpleExample.js).
-
-[ScrollableTabsExample](https://github.com/skv-headless/react-native-scrollable-tab-view/blob/master/Example/ScrollableTabsExample.js).
-
-[OverlayExample](https://github.com/skv-headless/react-native-scrollable-tab-view/blob/master/Example/OverlayExample.js).
-
-[FacebookExample](https://github.com/skv-headless/react-native-scrollable-tab-view/blob/master/Example/FacebookExample.js).
-
 ## Props
 
 - **`renderTabBar`** _(Function:ReactComponent)_ - accept 1 argument `props` and should return a component to use as
@@ -95,18 +74,3 @@ To start you can just copy [DefaultTabBar](https://github.com/skv-headless/react
 - **`contentProps`** _(Object)_ - props that are applied to root `ScrollView`/`ViewPagerAndroid`. Note that overriding defaults set by the library may break functionality; see the source for details.
 - **`scrollWithoutAnimation`** _(Bool)_ - on tab press change tab without animation.
 - **`prerenderingSiblingsNumber`** _(Integer)_ - pre-render nearby # sibling, `Infinity` === render all the siblings, default to 0 === render current page.
-
-## Contribution
-**Issues** are welcome. Please add a screenshot of bug and code snippet. Quickest way to solve issue is to reproduce it on one of the examples.
-
-**Pull requests** are welcome. If you want to change API or making something big better to create issue and discuss it first. Before submiting PR please run ```eslint .``` Also all eslint fixes are welcome.
-
-Please attach video or gif to PR's and issues it is super helpful.
-
-<a href="http://www.abeautifulsite.net/recording-a-screencast-with-quicktime/" target="_blank">How to make video</a>
-
-<a href="https://github.com/jclem/gifify" target="_blank">How to make gif from video</a>
-
----
-
-**MIT Licensed**

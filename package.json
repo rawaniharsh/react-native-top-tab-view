@@ -1,6 +1,6 @@
 {
   "name": "react-native-top-tab-view",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Tabbed navigation that you can swipe between, each tab can have its own ScrollView and maintain its own scroll position between swipes.",
   "main": "index.js",
   "scripts": {
